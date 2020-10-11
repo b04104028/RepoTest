@@ -8,17 +8,17 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class SaveScript : MonoBehaviour
 {
 
-    private Data data;
+    //private Data data;
     private string savePath;
 
     // Start is called before the first frame update
     void Start()
     {
-        data = GetComponent<Data>();
+      //  data = GetComponent<Data>();
         savePath = Application.persistentDataPath + "/savedata.save";
     }
 
-    public void SaveData()
+   /* public void SaveData()
     {
         var save = new Save()
         {
@@ -35,8 +35,8 @@ public class SaveScript : MonoBehaviour
         }
 
         Debug.Log("Data Saved.");
-    }
-    public void LoadData()
+    }*/
+  /*  public void LoadData()
     {
         if (File.Exists(savePath))
         {
@@ -60,7 +60,7 @@ public class SaveScript : MonoBehaviour
             Debug.LogWarning("save file doesn't exist.");
         }
     }
-
+    */
     // Update is called once per frame
     void Update()
     {

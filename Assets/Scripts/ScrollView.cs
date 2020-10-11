@@ -24,13 +24,6 @@ public class ScrollView : MonoBehaviour
     [SerializeField] GameObject Input_Floor;
     [SerializeField] GameObject Input_Location;
 
-    public string record_ProblemType = "";
-    public string record_BuildingName = "";
-    public string record_Floor = "";
-    public string record_Location = "";
-
-
-
     //these are to save the buttons in previous pages so that you can go back to "last page" 
     List<PrefabBehavior> button = new List<PrefabBehavior>();
     List<int> button_count = new List<int>();
@@ -74,12 +67,10 @@ public class ScrollView : MonoBehaviour
 
     void Awake()
     {
+       
+        ProblemType.Add("Info");
         ProblemType.Add("Archi");
         ProblemType.Add("Mech");
-        ProblemType.Add("HVAC");
-        ProblemType.Add("Monitor");
-        ProblemType.Add("Fire");
-        ProblemType.Add("Info");
         CreateButton(ProblemType);
 
         BuildingName.Add("building1");
@@ -124,7 +115,11 @@ building2.BuildingDetail["3F"][1] = "TopFloor";
 
     void Update()
     {
-        record_BuildingName = GameObject.Find("input-ProblemType").GetComponentInChildren<InputField>().text;
+        Data.ProblemTypeString = GameObject.Find("input-ProblemType").GetComponentInChildren<InputField>().text;
+        Data.BuildingNameString = GameObject.Find("input-BuildingName").GetComponentInChildren<InputField>().text;
+        Data.FloorString = GameObject.Find("input-Floor").GetComponentInChildren<InputField>().text;
+        Data.LocationString = GameObject.Find("input-Location").GetComponentInChildren<InputField>().text;
+
     }
     public void ChangeContent()
     {

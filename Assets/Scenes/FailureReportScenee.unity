@@ -326,10 +326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 267061aab27617940b419a6df2069aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input_Location: {fileID: 800138880}
-  input_BuildingName: {fileID: 1952301702}
-  input_Floor: {fileID: 1674397812}
-  input_ProblemType: {fileID: 554858191}
 --- !u!1 &185868587
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,10 +498,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1649,6 +1645,7 @@ RectTransform:
   m_Children:
   - {fileID: 582240176}
   - {fileID: 1612816149}
+  - {fileID: 1290745342}
   m_Father: {fileID: 1415807247}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1930,14 +1927,14 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -1977,17 +1974,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290745341}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1801732691}
-  m_Father: {fileID: 1612816149}
-  m_RootOrder: 8
+  m_Father: {fileID: 929332534}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -105, y: -250}
+  m_AnchoredPosition: {x: -105, y: -343}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1290745343
@@ -2718,6 +2715,7 @@ GameObject:
   - component: {fileID: 1612816150}
   - component: {fileID: 1612816153}
   - component: {fileID: 1612816152}
+  - component: {fileID: 1612816154}
   m_Layer: 5
   m_Name: blueFrame
   m_TagString: Untagged
@@ -2744,13 +2742,12 @@ RectTransform:
   - {fileID: 554858190}
   - {fileID: 1952301701}
   - {fileID: 800138879}
-  - {fileID: 1290745342}
   m_Father: {fileID: 929332534}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -46.49994}
+  m_AnchoredPosition: {x: 0, y: -46.5}
   m_SizeDelta: {x: 0, y: -93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612816150
@@ -2831,6 +2828,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1612816154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612816148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e6d01a684359649802b210009ee425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input_ProblemType: {fileID: 554858191}
+  input_BuildingName: {fileID: 1952301702}
+  input_Floor: {fileID: 1674397812}
+  input_OfficeName: {fileID: 800138880}
 --- !u!1 &1635806819
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,10 +3171,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3235,10 +3248,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
