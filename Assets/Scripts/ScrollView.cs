@@ -119,7 +119,6 @@ building2.BuildingDetail["3F"][1] = "TopFloor";
         Data.BuildingNameString = GameObject.Find("input-BuildingName").GetComponentInChildren<InputField>().text;
         Data.FloorString = GameObject.Find("input-Floor").GetComponentInChildren<InputField>().text;
         Data.LocationString = GameObject.Find("input-Location").GetComponentInChildren<InputField>().text;
-
     }
     public void ChangeContent()
     {
